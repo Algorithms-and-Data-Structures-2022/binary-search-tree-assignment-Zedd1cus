@@ -116,6 +116,9 @@ namespace assignment {
     // корень дерева
     Node *root_{nullptr};
 
+    //размер дерева
+    int size = 0;
+
     // вспомогательные методы
 
     void insert(int key, int value, Node *&node);
@@ -124,11 +127,11 @@ namespace assignment {
 
     void clear(Node *node);
 
-    Node *find(int key, Node *node) const;
-
     Node *find_min(Node *node) const;
 
     Node *find_max(Node *node) const;
+
+    Node *find(int key, Node *node) const;
   };
 
 }  // namespace assignment
